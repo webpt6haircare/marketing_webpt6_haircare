@@ -233,26 +233,27 @@ hr {
   left: 0;
 }
 .container .header-container .navigation nav .btn-login {
-  background: darkgoldenrod;
-  border: 1px sold goldenrod;
+  background: #c802a0;
+  color: white;
   margin-left: 7px;
   padding: 10px 5px;
   border-radius: 15px;
   cursor: pointer;
 }
 .container .header-container .navigation nav .btn-login:hover {
-  color: white;
-  background: purple;
+  color: #c802a0;
+  background: white;
 }
 .container .header-container .navigation nav .btn-reg {
-  background: dodgerblue;
+  background: #443266;
+  color: white;
   padding: 10px 5px;
   border-radius: 15px;
   cursor: pointer;
 }
 .container .header-container .navigation nav .btn-reg:hover {
-  color: white;
-  background: #443266;
+  color: #443266;
+  background: white;
 }
 @media screen and (max-height: 300px) {
   .container .header-container .navigation nav ul {
