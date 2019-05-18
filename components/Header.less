@@ -14,18 +14,69 @@
         display: flex;
         justify-content: flex-start;
         align-items: center;
-
+        width: 100%;
+       
 h2{ font-size: 2.5rem;
     color: @primary;
     font-family: 'Yellowtail', cursive;
+    img{    width: 10%;}
 }}
 
 .navigation{
     nav{ padding: 20px;
+        margin-top: 15px;
         a{  margin-left: 10px;
             text-decoration: none;
             color: @blueviolet;
-        }
+            position: relative;
+            font-weight: 300;
+        }a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: @blueviolet;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            
+          }
+          a:hover{
+              color:@primary ;
+              font-weight: 700;}
+          a:hover:after { 
+            width: 100%; 
+            left: 0; 
+          }
+          .btn-login{
+            background: darkgoldenrod;
+            border: 1px sold goldenrod;
+            margin-left: 7px;
+            padding: 10px 5px;
+            border-radius: 15px;
+            cursor: pointer;
+          }.btn-login:hover{
+              color:white;
+              background:purple;
+          }
+          .btn-reg{
+            background: dodgerblue;
+     
+         
+            padding: 10px 5px;
+            border-radius: 15px;
+            cursor: pointer;
+          }.btn-reg:hover{
+              color:white;
+              background:@blueviolet;
+          }
+          @media screen and (max-height: 300px) {
+              ul {
+                  margin-top: 40px;
+              }
+          }
     }
 }
 
