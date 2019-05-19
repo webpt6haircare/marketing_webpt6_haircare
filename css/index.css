@@ -593,12 +593,13 @@ hr {
   line-height: 100%;
 }
 @media (min-width: 400px) {
-  #middle .index-middle-content .index-side-pic {
-    font-size: 2em;
+  #middle .index-middle-content .index-side-pic h3 {
+    font-size: 1em;
+    line-height: 1.3rem;
   }
 }
 @media (min-width: 700px) {
-  #middle .index-middle-content .index-side-pic {
+  #middle .index-middle-content .index-side-pic h3 {
     font-size: 2.5rem;
     line-height: 3rem;
   }
@@ -612,9 +613,9 @@ hr {
   #middle .index-middle-content .index-side-pic img {
     width: 50%;
     height: 10rem;
-    border-radius: 34px;
+    border-radius: 10px;
     margin-left: 20px;
-    margin-top: 40%;
+    margin-top: 10%;
   }
 }
 @media (min-width: 700px) {
