@@ -14,6 +14,9 @@
     @media @desktop{
         width:  900px;
     }
+    @media @bigDesktops{
+        width:  1200px;
+    }
    
 .header-container{
     padding: 20px;
@@ -129,7 +132,8 @@ h2{
             font-size: 1rem;
         }a:after {    
             background: none repeat scroll 0 0 transparent;
-            bottom: 0;
+            bottom:0 ;
+            
             content: "";
             display: block;
             height: 2px;
@@ -138,6 +142,8 @@ h2{
             background: @blueviolet;
             transition: width 0.3s ease 0s, left 0.3s ease 0s;
             width: 0;
+            @media @smallerPhone{ bottom:0 ;}
+            @media @bigDesktops{top:10px;}
             
           }
           a:hover{
