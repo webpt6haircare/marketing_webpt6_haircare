@@ -2,11 +2,17 @@
 .container {
     width: 800px;
     margin: 0 auto;
- @media @phone{
+    @media @smallerPhone{
         width:  300px;
+    }
+ @media @phone{
+        width:  350px;
     }
     @media @tablet{
        width:  600px;
+    }
+    @media @desktop{
+        width:  950px;
     }
    
 .header-container{
@@ -14,6 +20,9 @@
     display: flex;
     justify-content: space-between;
         align-items: center;
+        @media @smallerPhone{ line-height: 4rem;
+            letter-spacing: .4rem;
+            flex-direction: column;}
         @media @phone{line-height: 4rem;
             letter-spacing: .4rem;
             flex-direction: column;}
@@ -36,6 +45,7 @@
 h2{ 
     color: @primary;
     font-family: 'Yellowtail', cursive;
+    @media @smallerPhone{ font-size: 1.4em;}
     @media @phone{
         font-size: 1.4em;
     }
@@ -52,6 +62,7 @@ h2{
 }
 .hamburger{width: 30px;
     display: none;
+    @media @smallerPhone{display: flex;}
     @media @phone{
         display: flex;
     }
@@ -70,6 +81,21 @@ h2{
         margin-top: 15px;
         display: flex;
         flex-direction: row;
+        position: relative;
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+        -moz-animation: fadein 2s; /* Firefox < 16 */
+         -ms-animation: fadein 2s; /* Internet Explorer */
+          -o-animation: fadein 2s; /* Opera < 12.1 */
+             animation: fadein 2s;
+             @media @smallerPhone{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                    display: none;
+                margin: 0 auto;
+                
+              }
         @media @phone{
             display: flex;
             flex-direction: column-reverse;
@@ -131,6 +157,7 @@ h2{
             -webkit-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
 -moz-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
 box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
+@media @smallerPhone{padding: 10px 28px; margin-left: 0;}
             @media @phone{ padding: 10px 28px; margin-left: 0;}
             @media @tablet{ padding: 10px 28px; margin-left: 0;}
             @media @desktop{padding: 10px 5px; margin-left: 15px;}
@@ -148,6 +175,7 @@ box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
             -webkit-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
             -moz-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
             box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
+            @media @smallerPhone{padding: 10px 20px;}
            @media @phone{ padding: 10px 20px;}
            @media @tablet{ padding: 10px 20px;}
            @media @desktop{padding: 10px 5px;}
