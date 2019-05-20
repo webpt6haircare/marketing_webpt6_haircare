@@ -201,6 +201,11 @@ hr {
     width: 900px;
   }
 }
+@media (min-width: 1400px) {
+  .container {
+    width: 1200px;
+  }
+}
 .container .header-container {
   padding: 20px;
   display: flex;
@@ -361,7 +366,7 @@ hr {
 }
 .container .header-container .navigation nav a:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 0;
+  bottom: 0 ;
   content: "";
   display: block;
   height: 2px;
@@ -370,6 +375,16 @@ hr {
   background: #443266;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
+}
+@media (min-width: 300px) {
+  .container .header-container .navigation nav a:after {
+    bottom: 0 ;
+  }
+}
+@media (min-width: 1400px) {
+  .container .header-container .navigation nav a:after {
+    top: 10px;
+  }
 }
 .container .header-container .navigation nav a:hover {
   color: #c802a0;
