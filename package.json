@@ -1,0 +1,19 @@
+{
+  "name": "marketing_webpt6_haircare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webpt6haircare/marketing_webpt6_haircare.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webpt6haircare/marketing_webpt6_haircare/issues"
+  },
+  "homepage": "https://github.com/webpt6haircare/marketing_webpt6_haircare#readme"
+}
