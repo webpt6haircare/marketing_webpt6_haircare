@@ -1031,3 +1031,6 @@ hr {
   justify-content: center;
   height: 65px;
 }
+.about-content {
+  height: 250px;
+}
