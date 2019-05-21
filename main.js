@@ -2,6 +2,7 @@ let hamburger = document.querySelector('.hamburger')
 let nav =  document.querySelectorAll('.navigation nav')
 let bannerBox= document.querySelector('.banner-box')
 let banner = document.querySelector('.banner')
+
  let red = true;
 
 hamburger.addEventListener('click', ()=>{
