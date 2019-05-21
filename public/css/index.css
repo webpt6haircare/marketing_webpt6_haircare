@@ -953,17 +953,12 @@ hr {
   }
 }
 .tab-content {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 80%;
   background: white;
   border-radius: 10px;
-}
-@media (min-width: 900px) {
-  .tab-content {
-    display: none;
-  }
 }
 .index-bottom {
   color: #c802a0;
