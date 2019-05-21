@@ -982,3 +982,52 @@ hr {
   align-items: center;
   font-size: 1.3rem;
 }
+.cta-top {
+  background-color: #c3c3e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  height: 225px;
+}
+.cta-top h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+.cta-top h1 p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.cta-bottom {
+  background-color: #c3c3e5;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+}
+.cta-bottom h1 {
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 2rem;
+}
+.card-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.card-container img {
+  width: 30%;
+  margin-left: 65px;
+  padding-bottom: 10px;
+}
+.about {
+  width: 50%;
+  margin-left: 55px;
+  padding: 10px;
+}
+.cta-end {
+  background-color: #c3c3e5;
+  display: flex;
+  justify-content: center;
+  height: 65px;
+}
