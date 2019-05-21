@@ -1026,3 +1026,117 @@ hr {
   justify-content: center;
   height: 65px;
 }
+.bg-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.bg-modal .modal-content {
+  width: 500px;
+  height: 300px;
+  background: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.bg-modal .modal-content .close {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 1.4rem;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.bg-modal .modal-content h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #c802a0;
+  font-size: 4rem;
+  margin-bottom: 5%;
+}
+.bg-modal .modal-content img {
+  width: 10%;
+  border-radius: 50px;
+}
+.bg-modal .modal-content input {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  height: 30px;
+  margin: 15px auto;
+}
+.bg-modal .modal-content a {
+  text-decoration: none;
+  background: #c802a0;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 1%;
+}
+.reg-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.reg-modal .modal-content {
+  width: 500px;
+  height: 410px;
+  background: white;
+  border-radius: 4px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.reg-modal .modal-content .closeReg {
+  position: absolute;
+  top: 0;
+  right: 14px;
+  font-size: 1.4rem;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.reg-modal .modal-content h1 {
+  font-family: 'Permanent Marker', cursive;
+  color: #c802a0;
+  font-size: 4rem;
+  margin-bottom: 5%;
+}
+.reg-modal .modal-content img {
+  width: 10%;
+  border-radius: 50px;
+}
+.reg-modal .modal-content input {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  height: 30px;
+  margin: 15px auto;
+}
+.reg-modal .modal-content a {
+  text-decoration: none;
+  background: #c802a0;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 10px;
+  position: relative;
+  bottom: 1%;
+}
