@@ -952,6 +952,19 @@ hr {
     font-size: 0.8em;
   }
 }
+.tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  background: white;
+  border-radius: 10px;
+}
+@media (min-width: 900px) {
+  .tab-content {
+    display: none;
+  }
+}
 .index-bottom {
   color: #c802a0;
   font-size: 2rem;
@@ -969,4 +982,3 @@ hr {
   align-items: center;
   font-size: 1.3rem;
 }
-
