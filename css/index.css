@@ -1032,5 +1032,6 @@ hr {
   height: 65px;
 }
 .about-content {
-  height: 250px;
+  height: 300px;
+  background-color: #c3c3e5;
 }
