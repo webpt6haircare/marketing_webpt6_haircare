@@ -1057,12 +1057,12 @@ hr {
 .card-container h2 {
   font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 700;
   margin-top: 5%;
 }
 @media (min-width: 300px) {
   .card-container h2 {
-    color: whitesmoke;
+    color: #443266;
   }
 }
 .about {
@@ -1070,6 +1070,7 @@ hr {
   width: 80%;
   text-align: center;
   text-transform: capitalize;
+  font-weight: 300;
 }
 .cta-end {
   display: flex;
