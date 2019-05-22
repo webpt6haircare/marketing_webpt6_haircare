@@ -1011,7 +1011,7 @@ hr {
   flex-direction: row-reverse;
 }
 .card-container img {
-  width: 50%;
+  width: 52%;
   margin-left: 65px;
   padding-bottom: 10px;
 }
@@ -1024,7 +1024,8 @@ hr {
   background-color: #c3c3e5;
   display: flex;
   justify-content: center;
-  height: 65px;
+  height: 45px;
+  margin-bottom: 20px;
 }
 .bg-modal {
   width: 100%;
@@ -1154,14 +1155,22 @@ hr {
   justify-content: flex-start;
   padding-top: 40px;
 }
+.about-photo-left img {
+  margin: auto;
+}
 .about-photo-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 40px;
 }
+.about-photo-right img {
+  margin: auto;
+  width: 30%;
+  height: 60%;
+}
 .contact-content {
-  height: 129px;
+  height: 140px;
   display: flex;
   flex-direction: row;
   justify-content: center;
