@@ -988,11 +988,16 @@ hr {
   text-align: center;
   font-size: 2.5rem;
   padding-bottom: 20px;
+  font-family: 'Permanent Marker', cursive;
 }
-.cta-top h1 p {
+.cta-top p {
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.2;
+}
+hr {
+  opacity: 0.2;
+  background: rgba(129, 22, 153, 0.027);
 }
 .cta-bottom {
   display: flex;
@@ -1000,9 +1005,12 @@ hr {
   height: auto;
 }
 .cta-bottom h1 {
-  padding-bottom: 10px;
+  padding-bottom: 40px;
   text-align: center;
   font-size: 2rem;
+  font-family: 'Yellowtail', cursive;
+  text-decoration: underline;
+  color: #c802a0;
 }
 .card-container {
   display: flex;
@@ -1011,38 +1019,67 @@ hr {
   margin: 0 auto;
   width: 100%;
 }
-.card-container img {
-<<<<<<< HEAD
-  width: 52%;
-  margin-left: 65px;
-  padding-bottom: 10px;
+@media (min-width: 300px) {
+  .card-container {
+    flex-direction: column;
+  }
 }
-.about {
-  width: 50%;
-  margin-left: 55px;
-  padding: 5px;
-=======
+@media (min-width: 900px) {
+  .card-container {
+    flex-direction: row;
+  }
+}
+.card-container img {
   border-radius: 11px;
   width: 30%;
   height: 6rem;
 }
+@media (min-width: 300px) {
+  .card-container img {
+    width: 45%;
+  }
+}
+@media (min-width: 700px) {
+  .card-container img {
+    width: 45%;
+  }
+}
+@media (min-width: 900px) {
+  .card-container img {
+    width: 30%;
+  }
+}
+@media (min-width: 1400px) {
+  .card-container img {
+    width: 40%;
+  }
+}
 .card-container h2 {
   font-size: 1rem;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 700;
   margin-top: 5%;
+}
+@media (min-width: 300px) {
+  .card-container h2 {
+    color: #443266;
+  }
 }
 .about {
   padding: 10px;
   width: 80%;
   text-align: center;
->>>>>>> e81e8f992089da49d3c44940913e73d48c855055
+  text-transform: capitalize;
+  font-weight: 300;
 }
 .cta-end {
   display: flex;
   justify-content: center;
-  height: 45px;
-  margin-bottom: 20px;
+  height: 65px;
+  text-transform: uppercase;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  color: #c802a0;
 }
 .card {
   border-radius: 20px;
@@ -1057,6 +1094,32 @@ hr {
   line-height: 1.4rem;
   margin-bottom: 7%;
   padding: 20px 20px 40px;
+  -webkit-box-shadow: -2px 7px 40px -4px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: -2px 7px 40px -4px rgba(0, 0, 0, 0.41);
+  box-shadow: -2px 7px 40px -4px rgba(0, 0, 0, 0.41);
+  border: 1px solid #0000002b;
+}
+@media (min-width: 300px) {
+  .card {
+    width: 80%;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    width: 45%;
+    height: 260px;
+  }
+}
+@media (min-width: 900px) {
+  .card {
+    width: 30%;
+    height: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  .card {
+    width: 25%;
+  }
 }
 .bg-modal {
   width: 100%;
@@ -1173,78 +1236,4 @@ hr {
   border-radius: 10px;
   position: relative;
   bottom: 1%;
-}
-.about-content {
-  height: 500px;
-  width: 60%;
-  background-color: #c3c3e5;
-  margin: auto;
-  display: flex;
-  justify-content: space-evenly;
-}
-.about-photo-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding-top: 40px;
-}
-.about-photo-left img {
-  margin: auto;
-}
-.about-photo-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding-bottom: 40px;
-}
-.about-photo-right img {
-  margin: auto;
-  width: 30%;
-  height: 60%;
-}
-.contact-content {
-  height: 140px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding-top: 20px;
-}
-.contact-btn {
-  background: #c802a0;
-  color: white;
-  margin-left: auto;
-  padding: 10px 5px;
-  border-radius: 15px;
-  cursor: pointer;
-  -webkit-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
-  -moz-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
-  box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
-}
-@media (min-width: 300px) {
-  .contact-btn {
-    padding: 10px 28px;
-    margin-left: 0;
-  }
-}
-@media (min-width: 400px) {
-  .contact-btn {
-    padding: 10px 28px;
-    margin-left: 0;
-  }
-}
-@media (min-width: 700px) {
-  .contact-btn {
-    padding: 10px 28px;
-    margin-left: 0;
-  }
-}
-@media (min-width: 900px) {
-  .contact-btn {
-    padding: 10px 5px;
-    margin-left: 15px;
-  }
-}
-.contact-btn:hover {
-  color: #c802a0;
-  background: white;
 }
