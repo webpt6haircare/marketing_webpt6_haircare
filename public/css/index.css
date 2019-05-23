@@ -1251,9 +1251,6 @@ hr {
   justify-content: center;
   padding-top: 40px;
 }
-.about-photo-left img {
-  margin: auto;
-}
 .about-photo-right {
   display: flex;
   flex-direction: column;
@@ -1261,7 +1258,6 @@ hr {
   padding-bottom: 40px;
 }
 .about-photo-right img {
-  margin: auto;
   width: 30%;
   height: 60%;
 }
