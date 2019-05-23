@@ -268,6 +268,7 @@ hr {
 @media (min-width: 900px) {
   .container .header-container div h2 {
     font-size: 2rem;
+    margin-bottom: 7%;
   }
 }
 .container .header-container div h2 img {
@@ -357,20 +358,18 @@ hr {
   }
 }
 .container .header-container .navigation nav a {
-  margin-left: 10px;
+  margin-left: 15px;
   text-decoration: none;
-  color: #443266;
+  color: #c802a0;
   position: relative;
   font-weight: 300;
   font-size: 1rem;
-  transition: background 1s ease-in;
   border-radius: 10px;
 }
 .container .header-container .navigation nav a:hover {
-  color: white;
+  color: #443266;
   font-weight: 700;
-  background: #c802a0;
-  padding: 15px 10px;
+  font-size: 1.2rem;
 }
 .container .header-container .navigation nav .btn-login {
   background: #c802a0;
@@ -1214,4 +1213,39 @@ hr {
   border-radius: 10px;
   position: relative;
   bottom: 1%;
+}
+.nav-wrapper {
+  width: 100%;
+  padding: 50px 0 70px;
+}
+/* HOVER EFFECT 4 */
+.effect-4 a:before {
+  content: "[";
+  left: -1px;
+}
+.effect-4 a:after {
+  content: "]";
+  right: -1px;
+}
+.effect-4 a:before,
+.effect-4 a:after {
+  position: absolute;
+  opacity: 0;
+  color: #c802a0;
+  top: -1px;
+  transition: all 0.5s;
+}
+.effect-4 a:hover:before,
+.effect-4 a:hover:after {
+  opacity: 0.7;
+}
+.effect-4 a:hover:before {
+  left: -8px;
+}
+.effect-4 a:hover:after {
+  right: -8px;
+}
+a:hover {
+  color: white;
+  font-weight: 700;
 }
