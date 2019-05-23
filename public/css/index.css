@@ -1023,7 +1023,7 @@ hr {
 }
 @media (min-width: 900px) {
   .card-container img {
-    width: 30%;
+    width: 40%;
   }
 }
 @media (min-width: 1400px) {
