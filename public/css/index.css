@@ -362,11 +362,11 @@ hr {
   color: #443266;
   position: relative;
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 .container .header-container .navigation nav a:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: -1;
+  bottom: 0 ;
   content: "";
   display: block;
   height: 2px;
@@ -383,7 +383,7 @@ hr {
 }
 @media (min-width: 1400px) {
   .container .header-container .navigation nav a:after {
-    top: 10px;
+    top: 20px;
   }
 }
 .container .header-container .navigation nav a:hover {
@@ -1237,36 +1237,45 @@ hr {
   position: relative;
   bottom: 1%;
 }
-.about-content {
-  height: 500px;
-  width: 60%;
-  background-color: #c3c3e5;
-  margin: auto;
+.heading-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 40px;
+}
+.heading-section h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+  padding: 5px;
+  padding-bottom: 8px;
+}
+.heading-section h1 h3 {
+  font-size: 1.2rem;
+}
+.about-cards {
   display: flex;
   justify-content: space-evenly;
-}
-.about-photo-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 40px;
-}
-.about-photo-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-bottom: 40px;
-}
-.about-photo-right img {
-  width: 30%;
-  height: 60%;
-}
-.contact-content {
-  height: 140px;
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding-top: 20px;
+  padding-right: 60px;
+  padding-left: 40px;
+  height: 411px;
+}
+.card {
+  margin: auto;
+}
+.card-photo {
+  margin: auto;
+  width: 40%;
+  height: 58%;
+}
+.contact {
+  text-align: center;
+  height: 189px;
+  padding: 20px;
+}
+.contact p {
+  padding-bottom: 10px;
 }
 .contact-btn {
   background: #c802a0;
