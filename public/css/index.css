@@ -317,6 +317,21 @@ hr {
   -o-animation: fadein 2s;
   /* Opera < 12.1 */
   animation: fadein 2s;
+  /*a:after {    
+            background: none repeat scroll 0 0 transparent;
+            bottom:0 ;
+            content: "";
+            display: block;
+            height: 2px;
+            left: 50%;
+            position: absolute;
+            background: @blueviolet;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            width: 0;
+            @media @smallerPhone{ bottom:0 ;}
+            @media @bigDesktops{top:10px;}
+            
+          }*/
 }
 @media (min-width: 300px) {
   .container .header-container .navigation nav {
@@ -363,28 +378,6 @@ hr {
   position: relative;
   font-weight: 300;
   font-size: 1rem;
-}
-.container .header-container .navigation nav a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0 ;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #443266;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-@media (min-width: 300px) {
-  .container .header-container .navigation nav a:after {
-    bottom: 0 ;
-  }
-}
-@media (min-width: 1400px) {
-  .container .header-container .navigation nav a:after {
-    top: 10px;
-  }
 }
 .container .header-container .navigation nav a:hover {
   color: #c802a0;
