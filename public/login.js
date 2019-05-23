@@ -6,7 +6,7 @@ let bgClose = document.querySelector('.close')
 let regModal = document.querySelector('.reg-modal')
 let regClose = document.querySelector('.closeReg')
 let regBtn = document.querySelector('.btn-reg')
- let red = true;
+ let blue = true;
 
 
 
@@ -19,20 +19,20 @@ let regBtn = document.querySelector('.btn-reg')
 
 loginBtn.addEventListener('click',()=>{
   
-    if( red=== true){ bgModal.style.display='flex' ; red=false} else{ bgModal.style.display='none' ; red=true}
+    if( blue=== true){ bgModal.style.display='flex' ; blue=false} else{ bgModal.style.display='none' ; blue=true}
 })
    
 bgClose.addEventListener('click' , ()=>{
-    if( red=== true){ bgModal.style.display='flex' ; red=false} else{ bgModal.style.display='none' ; red=true}
+    if( blue=== true){ bgModal.style.display='flex' ; blue=false} else{ bgModal.style.display='none' ; blue=true}
 })
    
 
 regBtn.addEventListener('click',()=>{
   
-    if( red=== true){ regModal.style.display='flex' ; red=false} else{ regModal.style.display='none' ; red=true}
+    if( blue=== true){ regModal.style.display='flex' ; blue=false} else{ regModal.style.display='none' ; blue=true}
 })
 
 regClose.addEventListener('click' , ()=>{
-    if( red=== true){ regModal.style.display='flex' ; red=false} else{ regModal.style.display='none' ; red=true}
+    if( blue=== true){ regModal.style.display='flex' ; blue=false} else{ regModal.style.display='none' ; blue=true}
 })
    
