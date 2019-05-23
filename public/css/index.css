@@ -362,11 +362,11 @@ hr {
   color: #443266;
   position: relative;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .container .header-container .navigation nav a:after {
   background: none repeat scroll 0 0 transparent;
-  bottom: 0 ;
+  bottom: -1;
   content: "";
   display: block;
   height: 2px;
@@ -1005,7 +1005,7 @@ hr {
   height: auto;
 }
 .cta-bottom h1 {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 2rem;
   font-family: 'Yellowtail', cursive;
@@ -1236,4 +1236,78 @@ hr {
   border-radius: 10px;
   position: relative;
   bottom: 1%;
+}
+.about-content {
+  height: 500px;
+  width: 60%;
+  background-color: #c3c3e5;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-photo-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 40px;
+}
+.about-photo-left img {
+  margin: auto;
+}
+.about-photo-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+.about-photo-right img {
+  margin: auto;
+  width: 30%;
+  height: 60%;
+}
+.contact-content {
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+.contact-btn {
+  background: #c802a0;
+  color: white;
+  margin-left: auto;
+  padding: 10px 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+}
+@media (min-width: 300px) {
+  .contact-btn {
+    padding: 10px 28px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 400px) {
+  .contact-btn {
+    padding: 10px 28px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 700px) {
+  .contact-btn {
+    padding: 10px 28px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 900px) {
+  .contact-btn {
+    padding: 10px 5px;
+    margin-left: 15px;
+  }
+}
+.contact-btn:hover {
+  color: #c802a0;
+  background: white;
 }
