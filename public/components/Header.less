@@ -130,30 +130,17 @@ h2{
             position: relative;
             font-weight: 300;
             font-size: 1rem;
+            transition: background 1s ease-in;
+            border-radius: 10px
         }
-        
-        /*a:after {    
-            background: none repeat scroll 0 0 transparent;
-            bottom:0 ;
-            content: "";
-            display: block;
-            height: 2px;
-            left: 50%;
-            position: absolute;
-            background: @blueviolet;
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            width: 0;
-            @media @smallerPhone{ bottom:0 ;}
-            @media @bigDesktops{top:10px;}
-            
-          }*/
-          a:hover{
-              color:@primary ;
-              font-weight: 700;}
-          a:hover:after { 
-            width: 100%; 
-            left: 0; 
-          }
+  
+a:hover{color:white;
+    font-weight: 700;
+    background:@primary ;
+    padding: 15px 10px;
+    }
+    
+       
           .btn-login{
             background: @primary;
            color:white;
@@ -200,3 +187,6 @@ box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
 
 
 }}
+
+
+
