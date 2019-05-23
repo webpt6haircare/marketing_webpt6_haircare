@@ -6,7 +6,11 @@ let bgClose = document.querySelector('.close')
 let regModal = document.querySelector('.reg-modal')
 let regClose = document.querySelector('.closeReg')
 let regBtn = document.querySelector('.btn-reg')
+
+
+
  let blue = true;
+
 
 
 

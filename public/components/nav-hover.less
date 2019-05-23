@@ -1,0 +1,46 @@
+
+
+.nav-wrapper {
+    width: 100%;
+    padding: 50px 0 70px;
+  }
+
+.nav-wrapper-4 {
+}
+
+
+  /* HOVER EFFECT 4 */
+
+.effect-4 a:before {
+    content: "[";
+    left: -1px;
+  }
+  
+  .effect-4 a:after {
+    content: "]";
+    right: -1px;
+  }
+  
+  .effect-4 a:before,
+  .effect-4 a:after {
+    position: absolute;
+    opacity: 0;
+    color: @primary;
+    top: -1px;
+    transition: all .5s;
+  }
+  
+  .effect-4 a:hover:before,
+  .effect-4 a:hover:after {
+    opacity: 0.7;
+  }
+  
+  .effect-4 a:hover:before {
+    left: -8px;
+  }
+  
+  .effect-4 a:hover:after {
+    right: -8px;
+  }
+  a:hover{color:white;
+font-weight: 700;}
