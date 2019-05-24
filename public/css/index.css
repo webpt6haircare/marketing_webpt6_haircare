@@ -322,16 +322,15 @@ hr {
 @media (min-width: 300px) {
   .container .header-container .navigation nav {
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
     display: none;
     margin: 0 auto;
   }
 }
 @media (min-width: 400px) {
   .container .header-container .navigation nav {
-    display: flex;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
@@ -342,9 +341,9 @@ hr {
 @media (min-width: 700px) {
   .container .header-container .navigation nav {
     display: flex;
-    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+    flex-direction: column-reverse;
     display: none;
     margin: 0 auto;
     font-size: 2em;
@@ -374,21 +373,15 @@ hr {
 .container .header-container .navigation nav .btn-login {
   background: #c802a0;
   color: white;
-  margin-left: 15px;
   padding: 10px 5px;
   border-radius: 15px;
   cursor: pointer;
+  transition: all 1s ease-in-out;
   -webkit-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
 }
 @media (min-width: 300px) {
-  .container .header-container .navigation nav .btn-login {
-    padding: 10px 28px;
-    margin-left: 0;
-  }
-}
-@media (min-width: 400px) {
   .container .header-container .navigation nav .btn-login {
     padding: 10px 28px;
     margin-left: 0;
@@ -416,6 +409,7 @@ hr {
   padding: 10px 5px;
   border-radius: 15px;
   cursor: pointer;
+  transition: all 1s ease-in-out;
   -webkit-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
   -moz-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
@@ -448,6 +442,53 @@ hr {
   .container .header-container .navigation nav ul {
     margin-top: 40px;
   }
+}
+.nav-wrapper {
+  width: 100%;
+  padding: 50px 0 70px;
+}
+/* HOVER EFFECT 4 */
+.effect-4 a:before {
+  content: "[";
+  left: -1px;
+}
+.effect-4 a:after {
+  content: "]";
+  right: -1px;
+}
+.effect-4 a:before,
+.effect-4 a:after {
+  position: absolute;
+  opacity: 0;
+  color: #c802a0;
+  top: -1px;
+  transition: all 0.5s;
+}
+.effect-4 a:hover:before,
+.effect-4 a:hover:after {
+  opacity: 0.7;
+}
+.effect-4 a:hover:before {
+  left: -8px;
+}
+.effect-4 a:hover:after {
+  right: -8px;
+}
+a:hover {
+  color: white;
+  font-weight: 700;
+}
+.footer {
+  background: #443266;
+  width: 100%;
+  color: white;
+  height: 76px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  padding: 20px;
 }
 .banner {
   color: white;
@@ -497,8 +538,8 @@ hr {
   width: 80%;
   background: #c802a0;
   text-align: center;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   border-radius: 8px;
@@ -531,11 +572,15 @@ hr {
 @media (min-width: 700px) {
   .banner .banner-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 900px) {
   .banner .banner-box {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .banner .banner-box h1 {
@@ -563,7 +608,7 @@ hr {
   padding: 85px 0 0 0;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   text-transform: uppercase;
 }
 .banner-content2 .banner-box2 h1 {
@@ -929,33 +974,11 @@ hr {
     font-size: 0.8em;
   }
 }
-.tab-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  background: white;
-  border-radius: 10px;
-}
-.tabz {
-  display: none;
-}
 .index-bottom {
   color: #c802a0;
   font-size: 2rem;
   text-align: center;
   font-family: 'Permanent Marker', cursive;
-}
-.footer {
-  background: #443266;
-  width: 100%;
-  color: white;
-  height: 76px;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.3rem;
 }
 .cta-top {
   display: flex;
@@ -1124,6 +1147,7 @@ hr {
   .card2 {
     width: 80%;
     margin: 0 auto;
+    margin-top: 3%;
   }
 }
 @media (min-width: 700px) {
@@ -1140,6 +1164,41 @@ hr {
 }
 @media (min-width: 1400px) {
   .card2 {
+    width: 25%;
+  }
+}
+.service-cards {
+  border-radius: 20px;
+  width: 30%;
+  background: #c3c3e5;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0 auto;
+  flex-direction: column;
+  height: 300px;
+  line-height: 1.4rem;
+  margin-bottom: 7%;
+  padding: 20px 20px 40px;
+  -webkit-box-shadow: -2px 7px 40px -4px rgba(0, 0, 0, 0.41);
+  -moz-box-shadow: -2px 7px 40px -4px rgba(0, 0, 0, 0.41);
+  box-shadow: -2px 7px 40px -4px rgba(0, 0, 0, 0.41);
+  border: 1px solid #0000002b;
+}
+@media (min-width: 700px) {
+  .responsive-cards {
+    width: 45%;
+    height: 260px;
+  }
+}
+@media (min-width: 900px) {
+  .responsive-cards {
+    width: 30%;
+    height: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  .responsive-cards {
     width: 25%;
   }
 }
@@ -1259,40 +1318,21 @@ hr {
   position: relative;
   bottom: 1%;
 }
-.nav-wrapper {
-  width: 100%;
-  padding: 50px 0 70px;
-}
-/* HOVER EFFECT 4 */
-.effect-4 a:before {
-  content: "[";
-  left: -1px;
-}
-.effect-4 a:after {
-  content: "]";
-  right: -1px;
-}
-.effect-4 a:before,
-.effect-4 a:after {
-  position: absolute;
-  opacity: 0;
-  color: #c802a0;
-  top: -1px;
-  transition: all 0.5s;
-}
-.effect-4 a:hover:before,
-.effect-4 a:hover:after {
-  opacity: 0.7;
-}
-.effect-4 a:hover:before {
-  left: -8px;
-}
-.effect-4 a:hover:after {
-  right: -8px;
-}
-a:hover {
+.btn {
+  background: #c802a0;
   color: white;
-  font-weight: 700;
+  padding: 10px 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  -webkit-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heading-section {
   display: flex;
