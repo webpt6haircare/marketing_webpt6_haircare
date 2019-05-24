@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 40px;
     h1 {
     font-family: 'Permanent Marker', cursive;
     font-size:2.5rem;
@@ -30,11 +29,15 @@
     }
     @media @tablet {
         flex-direction: row;
-        width: 100%;
+        width: 90%;
+        height: 350px;
         margin: auto;
     }
-    @media @bigDesktops {
+    @media @desktop {
         width: 80%;
+    }
+    @media @bigDesktops {
+        width: 60%;
     }
 
 }
@@ -72,7 +75,7 @@
     width: 40%;
     height: 58%;
     @media @smallerPhone {
-        width: 50%;
+        width: 30%;
     }
     @media @phone {
         width: 50%;
