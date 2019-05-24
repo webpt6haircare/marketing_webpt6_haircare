@@ -3,7 +3,6 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 40px;
     h1 {
     font-family: 'Permanent Marker', cursive;
     font-size:2.5rem;
@@ -20,7 +19,7 @@
     flex-direction: row;
     padding-right: 60px;
     padding-left: 40px;
-    height: 411px;
+    height: 330px;
     @media @smallerPhone {
         flex-direction: column;
         justify-content: space-between;
@@ -30,11 +29,15 @@
     }
     @media @tablet {
         flex-direction: row;
-        width: 100%;
+        width: 90%;
+        height: 350px;
         margin: auto;
     }
-    @media @bigDesktops {
+    @media @desktop {
         width: 80%;
+    }
+    @media @bigDesktops {
+        width: 60%;
     }
 
 }
@@ -64,6 +67,7 @@
         padding-bottom: 5px;
         p {
             font-size: 1rem;
+            text-align: center;
         }
     }
 }
@@ -72,7 +76,7 @@
     width: 40%;
     height: 58%;
     @media @smallerPhone {
-        width: 50%;
+        width: 30%;
     }
     @media @phone {
         width: 50%;
@@ -90,7 +94,7 @@
 .contact {
     text-align: center;
     height: 189px;
-    padding: 20px;
+    padding-top: 60px;
     @media @smallerPhone{
         height: 110px;
     }

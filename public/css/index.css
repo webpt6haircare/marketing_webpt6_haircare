@@ -1339,7 +1339,6 @@ hr {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  height: 40px;
 }
 .heading-section h1 {
   font-family: 'Permanent Marker', cursive;
@@ -1356,7 +1355,7 @@ hr {
   flex-direction: row;
   padding-right: 60px;
   padding-left: 40px;
-  height: 411px;
+  height: 330px;
 }
 @media (min-width: 300px) {
   .about-cards {
@@ -1370,13 +1369,19 @@ hr {
 @media (min-width: 700px) {
   .about-cards {
     flex-direction: row;
-    width: 100%;
+    width: 90%;
+    height: 350px;
     margin: auto;
+  }
+}
+@media (min-width: 900px) {
+  .about-cards {
+    width: 80%;
   }
 }
 @media (min-width: 1400px) {
   .about-cards {
-    width: 80%;
+    width: 60%;
   }
 }
 .card {
@@ -1416,6 +1421,7 @@ hr {
 }
 .card h3 p {
   font-size: 1rem;
+  text-align: center;
 }
 .card-photo {
   margin: auto;
@@ -1424,7 +1430,7 @@ hr {
 }
 @media (min-width: 300px) {
   .card-photo {
-    width: 50%;
+    width: 30%;
   }
 }
 @media (min-width: 400px) {
@@ -1450,7 +1456,7 @@ hr {
 .contact {
   text-align: center;
   height: 189px;
-  padding: 20px;
+  padding-top: 60px;
 }
 @media (min-width: 300px) {
   .contact {
