@@ -1432,6 +1432,7 @@ hr {
 @media (min-width: 300px) {
   .card-photo {
     width: 30%;
+    height: 65%;
   }
 }
 @media (min-width: 400px) {
