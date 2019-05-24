@@ -1261,18 +1261,114 @@ hr {
   padding-left: 40px;
   height: 411px;
 }
+@media (min-width: 300px) {
+  .about-cards {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    padding-top: 25px;
+  }
+}
+@media (min-width: 700px) {
+  .about-cards {
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .about-cards {
+    width: 80%;
+  }
+}
 .card {
   margin: auto;
+}
+@media (min-width: 300px) {
+  .card {
+    height: 80%;
+    margin: 6px auto;
+  }
+}
+@media (min-width: 400px) {
+  .card {
+    width: 80%;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    margin: 15px;
+  }
+}
+@media (min-width: 900px) {
+  .card {
+    width: 35%;
+    margin: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .card {
+    width: 30%;
+    margin: 40px;
+  }
+}
+.card h3 {
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+.card h3 p {
+  font-size: 1rem;
 }
 .card-photo {
   margin: auto;
   width: 40%;
   height: 58%;
 }
+@media (min-width: 300px) {
+  .card-photo {
+    width: 50%;
+  }
+}
+@media (min-width: 400px) {
+  .card-photo {
+    width: 50%;
+  }
+}
+@media (min-width: 700px) {
+  .card-photo {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .card-photo {
+    width: 45%;
+  }
+}
+@media (min-width: 1400px) {
+  .card-photo {
+    width: 40%;
+  }
+}
 .contact {
   text-align: center;
   height: 189px;
   padding: 20px;
+}
+@media (min-width: 300px) {
+  .contact {
+    height: 110px;
+  }
+}
+@media (min-width: 900px) {
+  .contact {
+    height: 178px;
+  }
+}
+@media (min-width: 1400px) {
+  .contact {
+    height: 214px;
+  }
 }
 .contact p {
   padding-bottom: 10px;
