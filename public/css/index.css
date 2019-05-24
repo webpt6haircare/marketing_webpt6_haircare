@@ -268,6 +268,7 @@ hr {
 @media (min-width: 900px) {
   .container .header-container div h2 {
     font-size: 2rem;
+    margin-bottom: 7%;
   }
 }
 .container .header-container div h2 img {
@@ -357,42 +358,18 @@ hr {
   }
 }
 .container .header-container .navigation nav a {
-  margin-left: 10px;
+  margin-left: 15px;
   text-decoration: none;
-  color: #443266;
+  color: #c802a0;
   position: relative;
   font-weight: 300;
   font-size: 1rem;
-}
-.container .header-container .navigation nav a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0 ;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #443266;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-@media (min-width: 300px) {
-  .container .header-container .navigation nav a:after {
-    bottom: 0 ;
-  }
-}
-@media (min-width: 1400px) {
-  .container .header-container .navigation nav a:after {
-    top: 20px;
-  }
+  border-radius: 10px;
 }
 .container .header-container .navigation nav a:hover {
-  color: #c802a0;
+  color: #443266;
   font-weight: 700;
-}
-.container .header-container .navigation nav a:hover:after {
-  width: 100%;
-  left: 0;
+  font-size: 1.2rem;
 }
 .container .header-container .navigation nav .btn-login {
   background: #c802a0;
@@ -1046,7 +1023,7 @@ hr {
 }
 @media (min-width: 900px) {
   .card-container img {
-    width: 30%;
+    width: 40%;
   }
 }
 @media (min-width: 1400px) {
@@ -1236,6 +1213,41 @@ hr {
   border-radius: 10px;
   position: relative;
   bottom: 1%;
+}
+.nav-wrapper {
+  width: 100%;
+  padding: 50px 0 70px;
+}
+/* HOVER EFFECT 4 */
+.effect-4 a:before {
+  content: "[";
+  left: -1px;
+}
+.effect-4 a:after {
+  content: "]";
+  right: -1px;
+}
+.effect-4 a:before,
+.effect-4 a:after {
+  position: absolute;
+  opacity: 0;
+  color: #c802a0;
+  top: -1px;
+  transition: all 0.5s;
+}
+.effect-4 a:hover:before,
+.effect-4 a:hover:after {
+  opacity: 0.7;
+}
+.effect-4 a:hover:before {
+  left: -8px;
+}
+.effect-4 a:hover:after {
+  right: -8px;
+}
+a:hover {
+  color: white;
+  font-weight: 700;
 }
 .heading-section {
   display: flex;
