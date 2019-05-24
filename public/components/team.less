@@ -1,0 +1,125 @@
+.heading-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 40px;
+    h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size:2.5rem;
+    padding: 5px;
+    padding-bottom: 8px;
+    h3 {
+        font-size: 1.2rem;
+        }
+    }
+}
+.about-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-right: 60px;
+    padding-left: 40px;
+    height: 411px;
+    @media @smallerPhone {
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
+        padding-top: 25px;
+    }
+    @media @tablet {
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+    }
+    @media @bigDesktops {
+        width: 80%;
+    }
+
+}
+.card {
+    margin: auto;
+    @media @smallerPhone {
+        height: 80%;
+        margin: 6px auto;
+    }
+    @media @phone {
+        width: 80%;
+    }
+    @media @tablet {
+        margin: 15px;
+    }
+    @media @desktop {
+        width: 35%;
+        margin: 30px;
+    }
+    @media @bigDesktops {
+        width: 30%;
+        margin: 40px;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+.card-photo {
+    margin: auto;
+    width: 40%;
+    height: 58%;
+    @media @smallerPhone {
+        width: 50%;
+    }
+    @media @phone {
+        width: 50%;
+    }
+    @media @tablet {
+        width: 50%;
+    }
+    @media @desktop {
+        width: 45%;
+    }
+    @media @bigDesktops {
+        width: 40%;
+    }
+}
+.contact {
+    text-align: center;
+    height: 189px;
+    padding: 20px;
+    @media @smallerPhone{
+        height: 110px;
+    }
+    @media @desktop {
+        height: 178px;
+    }
+    @media @bigDesktops {
+        height: 214px;
+    }
+    p {
+        padding-bottom: 10px;
+    }
+}
+
+.contact-btn {
+    background: @primary;
+           color:white;
+            margin-left: auto;
+            padding: 10px 5px;
+            border-radius: 15px;
+            cursor: pointer;
+            -webkit-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
+-moz-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
+box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
+@media @smallerPhone{padding: 10px 28px; margin-left: 0;}
+            @media @phone{ padding: 10px 28px; margin-left: 0;}
+            @media @tablet{ padding: 10px 28px; margin-left: 0;}
+            @media @desktop{padding: 10px 5px; margin-left: 15px;}
+          }.contact-btn:hover{
+              color:@primary;
+              background:white;
+}
