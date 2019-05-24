@@ -92,16 +92,15 @@ h2{
           -o-animation: fadein 2s; /* Opera < 12.1 */
              animation: fadein 2s;
              @media @smallerPhone{
-                display: flex;
+                .flex-center();
                 flex-direction: column-reverse;
-                justify-content: center;
-                align-items: center;
+                
                     display: none;
                 margin: 0 auto;
                 
               }
         @media @phone{
-            display: flex;
+            
             flex-direction: column-reverse;
             justify-content: center;
             align-items: center;
@@ -110,10 +109,9 @@ h2{
             
         }
         @media @tablet{
-            display: flex;
+            .flex-center();
             flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
+            
                 display: none;
             margin: 0 auto;
             
@@ -139,17 +137,8 @@ h2{
             font-weight: 700;font-size: 1.2rem;}
        
           .btn-login{
-            background: @primary;
-           color:white;
-            margin-left: 15px;
-            padding: 10px 5px;
-            border-radius: 15px;
-            cursor: pointer;
-            -webkit-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
--moz-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
+           .btn();
 @media @smallerPhone{padding: 10px 28px; margin-left: 0;}
-            @media @phone{ padding: 10px 28px; margin-left: 0;}
             @media @tablet{ padding: 10px 28px; margin-left: 0;}
             @media @desktop{padding: 10px 5px; margin-left: 15px;}
           }.btn-login:hover{
@@ -157,15 +146,7 @@ box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
               background:white;
           }
           .btn-reg{
-            background:@primary;
-                    color:white;
-         
-            padding: 10px 5px;
-            border-radius: 15px;
-            cursor: pointer;
-            -webkit-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
-            -moz-box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
-            box-shadow: 0px 10px 46px 11px rgba(0,0,0,0.26);
+            .btn();
             @media @smallerPhone{padding: 10px 20px;}
            @media @phone{ padding: 10px 20px;}
            @media @tablet{ padding: 10px 20px;}
