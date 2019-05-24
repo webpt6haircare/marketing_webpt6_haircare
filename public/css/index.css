@@ -982,7 +982,7 @@ hr {
   height: auto;
 }
 .cta-bottom h1 {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   text-align: center;
   font-size: 2rem;
   font-family: 'Yellowtail', cursive;
@@ -1249,6 +1249,178 @@ a:hover {
   color: white;
   font-weight: 700;
 }
-
-
-
+.heading-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 40px;
+}
+.heading-section h1 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5rem;
+  padding: 5px;
+  padding-bottom: 8px;
+}
+.heading-section h1 h3 {
+  font-size: 1.2rem;
+}
+.about-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-right: 60px;
+  padding-left: 40px;
+  height: 411px;
+}
+@media (min-width: 300px) {
+  .about-cards {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 80%;
+    padding-top: 25px;
+  }
+}
+@media (min-width: 700px) {
+  .about-cards {
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .about-cards {
+    width: 80%;
+  }
+}
+.card {
+  margin: auto;
+}
+@media (min-width: 300px) {
+  .card {
+    height: 80%;
+    margin: 6px auto;
+  }
+}
+@media (min-width: 400px) {
+  .card {
+    width: 80%;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    margin: 15px;
+  }
+}
+@media (min-width: 900px) {
+  .card {
+    width: 35%;
+    margin: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  .card {
+    width: 30%;
+    margin: 40px;
+  }
+}
+.card h3 {
+  font-size: 1.2rem;
+  padding-bottom: 5px;
+}
+.card h3 p {
+  font-size: 1rem;
+}
+.card-photo {
+  margin: auto;
+  width: 40%;
+  height: 58%;
+}
+@media (min-width: 300px) {
+  .card-photo {
+    width: 50%;
+  }
+}
+@media (min-width: 400px) {
+  .card-photo {
+    width: 50%;
+  }
+}
+@media (min-width: 700px) {
+  .card-photo {
+    width: 50%;
+  }
+}
+@media (min-width: 900px) {
+  .card-photo {
+    width: 45%;
+  }
+}
+@media (min-width: 1400px) {
+  .card-photo {
+    width: 40%;
+  }
+}
+.contact {
+  text-align: center;
+  height: 189px;
+  padding: 20px;
+}
+@media (min-width: 300px) {
+  .contact {
+    height: 110px;
+  }
+}
+@media (min-width: 900px) {
+  .contact {
+    height: 178px;
+  }
+}
+@media (min-width: 1400px) {
+  .contact {
+    height: 214px;
+  }
+}
+.contact p {
+  padding-bottom: 10px;
+}
+.contact-btn {
+  background: #c802a0;
+  color: white;
+  margin-left: auto;
+  padding: 10px 5px;
+  border-radius: 15px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 10px 46px 11px rgba(0, 0, 0, 0.26);
+}
+@media (min-width: 300px) {
+  .contact-btn {
+    padding: 10px 28px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 400px) {
+  .contact-btn {
+    padding: 10px 28px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 700px) {
+  .contact-btn {
+    padding: 10px 28px;
+    margin-left: 0;
+  }
+}
+@media (min-width: 900px) {
+  .contact-btn {
+    padding: 10px 5px;
+    margin-left: 15px;
+  }
+}
+.contact-btn:hover {
+  color: #c802a0;
+  background: white;
+}
