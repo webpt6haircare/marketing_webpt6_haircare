@@ -4,37 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
+    <title>Team</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="shortcut icon" href="./img/icon_4eB_1.ico" type="image/x-icon"/>
 </head>
 <body>
-<div class="container">
-    <div class="header-container">
-            <div class="navigation nav-wrapper nav-wrapper-4">
-                    <nav class="effect-4">
-                        <a href="index.html">Home</a>
-                        <a href="aboutus.html">About Us</a>
-                        <a href="services.html">Services</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Log In</a>
-                    </nav>
-                </div>
-    </div>
-    <div class="about-content">
-    <div class="about-photo">
-        <img src="" alt="about-photo1">
-        <p>Daoruni gimi, Ionos Sonaro. Ao ynoma diniluks?</p>
-    </div>
 
-    <div class="about-photo">
-        <img src="" alt="about-photo2">
-        <p>Daoruni gimi, Ionos Sonaro. Ao ynoma diniluks?</p>
+<div class="container">
+<section class='top-index'>
+        <div class="header-container ">
+            <div>
+                <h2> <img src="./img/icon.png"/>  Hair Connect</h2>
+                <img class="hamburger" src="./img/hamburger.png"/>
+            </div>
+            
+            <div class="navigation nav-wrapper nav-wrapper-4">
+                <nav class="effect-4">
+                    <a href="./index.html">Home</a>
+                    <a class="selected" href="aboutus.html">Team</a>
+                    <a href="services.html">Services</a>
+
+                    <button class='btn-login'>Login </button>
+                    <button class='btn-reg'>Register </button>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+<section>
+    </div>
+<div class="heading-section">
+    <h1>Who we are</h1>
+    <h3>Meet The Team Behind The Site</h3>
+</div>
+<div class="about-cards">
+    <div class="card">
+        <img class="card-photo" src="images/Image from iOS.jpg" alt="about-photo-1">
+        <h3>Jason Aviles</h3>
+    </div>
+    <div class="card">
+        <img class="card-photo" src="images/about-photo2.jpg" alt="about-photo-2">
+        <h3>LaDonna Moaney</h3>
     </div>
 </div>
-<div>
-    <h2>Contact Us!</h2>
+<div class="contact">
+    <p>Daoruni gimi, Ionos Sonaro. Ao ynoma diniluks?</p>
+    <button class="contact-btn">Need to reach us?</button>
+</div>
+    <section>
+           <div class="footer">
+               <h3>&copy;
+                    Hair Connect 2019</h3>
+           </div>
+    </section>
     
+    </div>
 </div>
+<div class="bg-modal">
+<div class="modal-content">
+    <div class="close">+</div>
+  <h1>Login</h1>
+  <img src="./img/icon.png" alt="">
+  <form action="">
+      <input type="text" placeholder="Name">
+      <input type="text" placeholder="password">
+      <a href="#" class="btn-login">Submit</a>
+  </form>  
+ 
+ <div></div>
+
+
 </div>
-    </body>
+
+</div>
+
+
+<div class="reg-modal">
+
+        <div class="modal-content">
+            <div class="closeReg">+</div>
+          <h1>Register</h1>
+          <img src="./img/icon.png" alt="">
+          <form action="./index.html">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="email">
+              <input type="text" placeholder="new password">
+              <input type="text" placeholder="password confirmation">
+              <a href="#" class="btn-login">Submit</a>
+          </form>  
+         
+         <div></div>
+        
+        
+        </div>
+        
+        </div>
+
+<script src="./login.js"></script>
+<script src='./main.js'></script>
+<script src="./team.js"></script>
+
+</body>
     </html>

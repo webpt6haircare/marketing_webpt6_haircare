@@ -1,5 +1,6 @@
 
 
+
 let loginBtn = document.querySelector('.btn-login')
 let bgModal = document.querySelector('.bg-modal')
 let bgClose = document.querySelector('.close')
@@ -51,3 +52,4 @@ hamburger.addEventListener('click', ()=>{
        
     })
 })
+
